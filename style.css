@@ -12,48 +12,60 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: 'Cookie', cursive;
+  font-size: 30px;
+  background-image: url("images/pink.png");
 }
 
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  
 }
 
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: blueviolet;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  
+  border-image: url("images/dream.png") 5 fill ;
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+
+}
+im{
+  width: max-content;
 }
 
 .card-header::after {
   content: " ";
   display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+  width: 90%;
+  margin-left: 30px;
+  background-image: url("images/green.png" );
+ height: 20px;
+
+ background-repeat:repeat;
 }
 
 .card-body {
   min-height: 100px;
+ 
 }
 
 .card-footer {
@@ -76,11 +88,21 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-image: repeating-linear-gradient(-45deg, 
+  #7BDFF2 10px 30px,
+  #B2F7EF 30px 50px,
+  #EFF7F6 50px 70px,
+  #F7D6E0 70px 90px,
+  #F2B5D4 90px 110px
+);
+color: black;
+
+border: none;
+
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -88,12 +110,13 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+
+
+ 
+
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
+
 
 .float-right {
   float: right;
@@ -114,7 +137,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed #b4b1b4;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
